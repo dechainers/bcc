@@ -51,7 +51,9 @@ list(APPEND clang_libs
   ${libclangEdit}
   ${libclangAST}
   ${libclangLex}
-  ${libclangBasic})
+  ${libclangBasic}
+  Polly
+  PollyISL)
 endif()
 
 # prune unused llvm static library stuff when linking into the new .so
